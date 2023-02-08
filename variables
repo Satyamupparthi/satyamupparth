@@ -1,0 +1,110 @@
+num =5
+print(id(num))
+#
+name = 'satya'
+print( id(name))
+#
+a=10
+b=a
+print(a)
+print(b)
+print(id(a))
+print(id(10))
+k=10
+print(id(k))
+a=9
+print(id(a))
+print(id(b))
+k=a
+print(id(k))
+b=8
+print(id(b))
+PI=3.14
+print(PI)
+PI=3.15
+print(type(PI))
+#data types in python
+#none/1)int 2)float 3) complex 4)bool
+#(1)int
+num=5
+print(type(num))
+a=5.6
+b=int(a)
+print(type(b))
+b=5
+print(b)
+print(int(True))
+print(int(False))
+#(2)float
+num=2.5
+print(type(num))
+k=float(b)
+print(k)
+#(3) complex
+num=6+9j
+print(type(num))
+k=6
+c=complex(b,k)
+print(c)
+#(4)bool
+bool=b<k
+print(type(bool))
+print(b<k)
+print(b>k)
+#sequence
+#(1)list (2) set (3)tuple (4)string (5)range
+#(1)list
+lst=[25,36,45,12,67,98]
+print(type(lst))
+#(2)set
+s=set([25,36,45,12,67,98])
+print(s)
+print(type(s))
+s={25,36,45,12,67,98}
+print(type(s))
+#(3)tuple
+t=(25,36,45,12,67,98)
+print(type(t))
+#(4)string
+str="satya"
+st='a'
+print(type(st))
+#(5)range
+print(range(10))
+print(list(range(10)))
+print(list(range(2,10,2)))
+print(type(range(10)))
+#dictionary is storing the data key and values formate
+d={'satya':'realmec21','mani':'iphone13promax','surya':'iQ00'}
+print(d)
+print(d.keys())
+print(d.values())
+print(d['satya'])
+print(d.get('mani'))
+data = {1:'satya',2:'durga',4:'surya'}
+print(data)
+print(data[4])
+#print(data[3])
+print(data.get(1))
+print(data.get(3))
+print(data.get(1,'not found'))
+print(data.get(3,'not found'))
+#create a dictionary with the help of list
+keys = ['satya','durga','surya']
+values = ['python','java','c']
+data=dict(zip(keys,values))
+print(data)
+print(data['satya'])
+#add new alues in the dictionary
+data['hema']='c++'
+print(data)
+#deleting the value in dictionary
+del data['durga']
+print(data)
+#create is new dictionary which will have list in side the dictionary
+prog={'Js':'Atom','Cs':'Vs','Python':['pycharm','sublime'],'Java':{'JSE':'netbean','JEE':'Elipse'}}
+print(prog)
+print(prog['Js'])
+print(prog['Python'][1])
+print(prog['Java'])
+print(prog['Java']['JEE'])

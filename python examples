@@ -1,0 +1,30 @@
+l = [(2,3),(1,2),(4,4),(2,3),(2,1)]
+for i in range(len(l)):
+    for j in range(len(l)):
+        if l[i][1]<l[j][1]:
+            l[i],l[j]=l[j],l[i]
+print(l)
+
+#
+lis=[{"name":"satya","age":15},
+     {"name":"durga","age":16},
+     {"name":"surya","age":17}]
+lis.sort(key=lambda x:x['age'])
+print(lis)
+#write a program to sort python dictionary by values
+dict = {'math':92,'eng':96,'telugu':99,'ps':95}
+dict1={}
+temp={}
+
+for key,value in dict.items():
+    temp[value]=key
+print(temp)
+
+for key in sorted(temp.keys()):
+    dict1[key]=temp[key]
+print(dict1)
+#convert a list into tuple
+list=[12,23,34,56,78]
+list_to_tuple=tuple(list)
+print(list)
+print(list_to_tuple)

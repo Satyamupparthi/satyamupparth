@@ -1,0 +1,40 @@
+data=[(1,'hema'),(2,'venkata'),(3,'surya'),(4,'satya'),(5,'durga')]
+print(data)
+#using zip()function
+roll_no=[6,7,8,9,10]
+name=['hema','venkata','surya','satya','durga']
+data=list(zip(roll_no,name))
+print(data)
+#
+name=[['hema'],['venkata'],['surya'],['satya'],['durga']]
+data=list(map(tuple,name))
+print(data)
+#
+name=[['hema'],['venkata'],['surya'],['satya'],['durga']]
+data=[tuple(x) for x in name]
+print(data)
+#tuple & set
+tup=(21,36,14,25,78)
+print(tup)
+print(tup[1])
+#set
+s={23,5,67,89,20}
+print(s)
+s.add(45)
+print(s)
+s.difference(s)
+print(s)
+s.clear()
+print(s)
+#
+s={"apple","banana","cherry","orange"}
+print(s)
+print(len(s))
+s2={1,2,3,4,5}
+s3={True,False,False}
+print(s3)
+print(s2)
+print(s)
+#
+set1={"abc",34,True,40,"male"}
+print(set1)

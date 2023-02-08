@@ -1,0 +1,129 @@
+#airthmetic operators('+','-','/','*')
+x=2
+y=3
+print(x+y)
+print(x-y)
+print(x/y)
+print(x*y)
+#assignment operator
+x=x+2
+print(x)
+x+=2
+print(x)
+x*=3
+print(x)
+a,b=5,6
+print(a)
+print(b)
+#unary operator
+n=7
+print(n)
+print(-n)
+print(n)
+n=-n
+print(n)
+#relational operator
+a,b=5,6
+print(a<b)
+print(a>b)
+print(a==b)
+print(a<=b)
+print(a>=b)
+print(a!=b)#not equal
+b=7
+print(a!=b)
+#logical operators(and,or,not)
+#AND
+a=5
+b=4
+print(a<8 and b<5)
+print(a<8 and b>2)
+#OR
+print(a<8 or b<2)
+x=True
+print(x)
+#not
+print(not x)
+x=not x
+print(x)
+#number system conversion in python
+#(1) binary (2) decimal (3) octal (4) hexa decimal
+#25 conver into binary formate
+print(bin(25))#bin(decimal to binary)
+print(0b0101)#binary to decimal
+print(oct(25))#octal
+print(hex(25))#hexa decimal
+print(hex(10))
+print(0xf)
+#swap 2 variables
+a=5
+b=6
+a=b
+b=a
+print(a)
+print(b)
+#lost value 5 that's why we use third variable
+a=5
+b=6
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+#without using third variable swap two variables
+a=5#101
+b=6#110
+a=a+b#11
+b=a-b#5
+a=a-b#6
+print(a)
+print(b)
+# using XOR complement swap two variables
+a=5
+b=6
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)
+#another way to swap two variables
+a=5
+b=6
+a,b=b,a
+print(a)
+print(b)
+#bitwise operators
+#(1) complement(~) (2)and(&) (3)or(|)(4)xor(^)(5)left shift(<<) (6)right shift(>>)
+#complement(~)
+print(~12)
+a=~1010
+print(a)
+#bitwiseand(&)
+print(12&13)
+print(25&30)
+#bitwiseor(|)
+print(12|13)
+print(25|30)
+#xor(^)
+print(12^13)
+print(25^30)
+#leftshift
+print(10<<2)#gains bits
+#rightshift
+print(10>>2)#losing bits
+#python program to show bitwise operator
+a=10
+b=4
+print("a&b=",a&b)
+print("a|b=:",a|b)
+print("~a=",~a)
+print("a^b=",a^b)
+#python program to show shift operators
+a=10
+b=-10
+print("a>>1+",a>>1)
+print("b>>1+",b>>1)
+a=5
+b=-10
+print("a<<1=",a<<1)
+print("b<<1=",b<<1)
